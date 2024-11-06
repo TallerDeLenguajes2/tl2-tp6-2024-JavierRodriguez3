@@ -34,7 +34,7 @@ namespace presupuestos
 
                 if (Detalle != null)
                 {
-                    acumuladorMonto = item.Producto.Precio;
+                    acumuladorMonto =+ item.Producto.Precio;
                 }
 
             }

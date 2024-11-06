@@ -17,6 +17,14 @@
 
     <div class="container mt-5">
         <h2 class="mb-4">Lista de Presupuestos</h2>
+        <div class="container mt-5">
+            <div class="d-flex gap-2">
+                <h2>
+                    <a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
+                        asp-action="CrearPresupuestos">Crear Presupuesto</a>
+                </h2>
+            </div>
+        </div>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
                 <tr>
@@ -33,6 +41,8 @@
                         <th scope="row">@item.IdPresupuesto</th>
                         <td>@item.NombreDestinatario</td>
                         <td>@item.FechaCreacion</td>
+                        <td><a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
+                        asp-action="ListarDetallesPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Detalles</a></td>
                     </tr>
                 }
             </tbody>

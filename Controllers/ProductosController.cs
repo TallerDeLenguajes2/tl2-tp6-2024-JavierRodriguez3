@@ -26,7 +26,7 @@ namespace productosController
             return View();
         }
 
-        [HttpPost("/api/Producto")]
+        [HttpPost]
         public IActionResult CrearProductos(Productos producto)
         {
             if (ModelState.IsValid) // Verifica si el modelo es válido

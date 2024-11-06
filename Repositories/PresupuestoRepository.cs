@@ -12,7 +12,7 @@ namespace presupuestoRepository
     {
         private string CadenaDeConexion = "Data Source=db/Tienda.db;Cache=Shared";
 
-        public void CrearPresupuesto(Presupuestos presupuesto)
+        public void CrearPresupuestos(Presupuestos presupuesto)
     {
         ProductosRepository repoProductos = new ProductosRepository();
 
@@ -76,6 +76,45 @@ namespace presupuestoRepository
                 return listaPresupuestos;
             }
         }
+
+        public List<PresupuestoDetalle> ObtenerDetalle(int id)
+    {
+        string query = @"SELECT p.idProducto, p.Descripcion, p.Precio, pd.Cantidad 
+                         FROM Productos AS p
+                         INNER JOIN PresupuestosDetalle AS pd USING (idProducto)
+                         WHERE pd.idPresupuesto = @idquery";
+
+        List<PresupuestoDetalle> lista = new List<PresupuestoDetalle>();
+
+        using (SqliteConnection connection = new SqliteConnection(CadenaDeConexion))
+        {
+            connection.Open();
+            using (SqliteCommand command = new SqliteCommand(query, connection))
+            {
+                command.Parameters.Add(new SqliteParameter("@idquery", id));
+
+                using (SqliteDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        PresupuestoDetalle Pd = new PresupuestoDetalle();
+                        Productos nuevoProducto = new Productos();
+
+                        nuevoProducto.IdProducto = Convert.ToInt32(reader["idProducto"]);
+                        nuevoProducto.Descripcion = Convert.ToString(reader["Descripcion"]);
+                        nuevoProducto.Precio = Convert.ToInt32(reader["Precio"]);
+                        Pd.Cantidad = Convert.ToInt32(reader["Cantidad"]);
+
+                        Pd.Producto = nuevoProducto;
+
+                        lista.Add(Pd);
+                    }
+                }
+            }
+        }
+        return lista;
+    }
+
 
         public Presupuestos ObtenerPresupuestoConDetalles(int idPresupuesto)
         {
