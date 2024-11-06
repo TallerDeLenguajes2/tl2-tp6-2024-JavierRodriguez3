@@ -39,5 +39,28 @@ namespace presupuestoController
             }
             return View(presupuesto); // Si hay errores, vuelve a la vista del formulario con el modelo
         }
+
+        [HttpGet]
+    public IActionResult ModificarPresupuestos(int id)
+    {
+        var presupuesto = _presupuestoRepository.ObtenerPresupuestoPorId(id);
+        if (presupuesto == null)
+        {
+            return NotFound();
+        }
+        return View(presupuesto);
+    }
+
+        [HttpPost]
+        public IActionResult ModificarPresupuestos(Presupuestos presupuestos)
+        {
+            if (ModelState.IsValid)
+            {
+                _presupuestoRepository.ModificarPresupuestoQ(presupuestos);
+                return RedirectToAction(nameof(ListarPresupuestos));
+            }
+            return View(presupuestos);
+        } 
+
     }
 }

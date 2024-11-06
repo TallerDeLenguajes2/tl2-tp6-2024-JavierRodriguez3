@@ -42,7 +42,9 @@
                         <td>@item.NombreDestinatario</td>
                         <td>@item.FechaCreacion</td>
                         <td><a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
-                        asp-action="ListarDetallesPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Detalles</a></td>
+                        asp-action="ListarDetallesPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Detalles</a>
+                        <a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
+                        asp-action="ModificarPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Modificar</a></td>
                     </tr>
                 }
             </tbody>

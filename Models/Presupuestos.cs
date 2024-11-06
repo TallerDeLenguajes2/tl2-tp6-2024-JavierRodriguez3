@@ -25,6 +25,13 @@ namespace presupuestos
         this.fechaCreacion = fechaCreacion;
         this.detalle = detalle;
     }
+    public Presupuestos(int idPresupuesto, string nombreDestinatario, string fechaCreacion)
+    {
+        this.idPresupuesto = idPresupuesto;
+        this.nombreDestinatario = nombreDestinatario;
+        this.fechaCreacion = fechaCreacion;
+        detalle = new List<PresupuestoDetalle>();
+    }
 
         public float MontoPresupuesto()
         {
