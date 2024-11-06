@@ -10,6 +10,7 @@ namespace productos{
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int Precio { get => precio; set => precio = value; }
 
+        public Productos() { }
         public Productos(int idProducto, string descripcion, int precio){
             this.idProducto = idProducto;
             this.descripcion = descripcion;

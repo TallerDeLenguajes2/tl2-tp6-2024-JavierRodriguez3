@@ -26,8 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ListarPresupuestos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXExpc3RhclByZXN1cHVlc3Rvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/CrearProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWFyUHJvZHVjdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/EliminarProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVsaW1pbmFyUHJvZHVjdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ListarProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXExpc3RhclByb2R1Y3Rvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ModificarProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXE1vZGlmaWNhclByb2R1Y3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Shared/Error.cshtml]

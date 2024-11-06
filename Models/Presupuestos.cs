@@ -17,6 +17,7 @@ namespace presupuestos
         public List<PresupuestoDetalle> Detalle { get => detalle; set => detalle = value; }
         public string FechaCreacion { get => fechaCreacion; set => fechaCreacion = value; }
 
+        public Presupuestos() { }
         public Presupuestos(int idPresupuesto, string nombreDestinatario, string fechaCreacion, List<PresupuestoDetalle> detalle)
     {
         this.idPresupuesto = idPresupuesto;

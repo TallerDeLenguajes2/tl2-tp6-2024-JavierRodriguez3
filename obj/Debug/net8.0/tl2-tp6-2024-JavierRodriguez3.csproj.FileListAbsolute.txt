@@ -54,3 +54,4 @@ C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\refint\tl2
 C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\tl2-tp6-2024-JavierRodriguez3.pdb
 C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\tl2-tp6-2024-JavierRodriguez3.genruntimeconfig.cache
 C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\ref\tl2-tp6-2024-JavierRodriguez3.dll
+C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\tl2-tp6-2024-JavierRodriguez3.sourcelink.json

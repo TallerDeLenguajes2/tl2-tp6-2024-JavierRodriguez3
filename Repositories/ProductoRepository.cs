@@ -8,7 +8,7 @@ namespace productoReposotory
     {
         private string CadenaDeConexion = "Data Source=db/Tienda.db;Cache=Shared";
 
-        public void CrearProducto(Productos nuevo)
+        public void CrearProductos(Productos nuevo)
         {
             using (SqliteConnection connection = new SqliteConnection(CadenaDeConexion))
             {
