@@ -44,7 +44,9 @@
                         <td><a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
                         asp-action="ListarDetallesPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Detalles</a>
                         <a class="btn btn-primary text-white" asp-area="" asp-controller="Presupuestos"
-                        asp-action="ModificarPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Modificar</a></td>
+                        asp-action="ModificarPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Modificar</a>
+                        <a class="btn btn-danger  text-white" asp-area="" asp-controller="Presupuestos"
+                        asp-action="EliminarPresupuestos" method="get" asp-route-id="@item.IdPresupuesto">Eliinar</a></td>
                     </tr>
                 }
             </tbody>

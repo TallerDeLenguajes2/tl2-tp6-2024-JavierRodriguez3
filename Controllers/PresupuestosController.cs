@@ -62,5 +62,23 @@ namespace presupuestoController
             return View(presupuestos);
         } 
 
+        [HttpGet]
+        public IActionResult EliminarPresupuestos(int id)
+        {
+            var presupuesto = _presupuestoRepository.ObtenerPresupuestoConDetalles(id);
+            if (presupuesto == null)
+            {
+                return NotFound();
+            }
+            return View(presupuesto);
+        }
+
+        [HttpPost]
+        public IActionResult EliminarPresupuestosConfirmarEliminacion(int id)
+        {
+            _presupuestoRepository.EliminarPresupuestoPorId(id);
+            return RedirectToAction(nameof(ListarPresupuestos));
+        }
+
     }
 }

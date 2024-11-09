@@ -9,71 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tl2_tp6_2024_JavierRodriguez3
 build_property.RootNamespace = tl2_tp6_2024_JavierRodriguez3
-build_property.ProjectDir = D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\
+build_property.ProjectDir = C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3
+build_property.MSBuildProjectDirectory = C:\AAAFacultad\Taller2\tl2-tp6-2024-JavierRodriguez3
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Home/Index.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Home/Privacy.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/CrearPresupuestos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/CrearPresupuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXENyZWFyUHJlc3VwdWVzdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ListarDetallesPresupuestos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/EliminarPresupuestos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXEVsaW1pbmFyUHJlc3VwdWVzdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ListarDetallesPresupuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXExpc3RhckRldGFsbGVzUHJlc3VwdWVzdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ListarPresupuestos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ListarPresupuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXExpc3RhclByZXN1cHVlc3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ModificarPresupuestos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Presupuestos/ModificarPresupuestos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXE1vZGlmaWNhclByZXN1cHVlc3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Productos/CrearProductos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/CrearProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWFyUHJvZHVjdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Productos/EliminarProductos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/EliminarProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVsaW1pbmFyUHJvZHVjdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ListarProductos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ListarProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXExpc3RhclByb2R1Y3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ModificarProductos.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Productos/ModificarProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXE1vZGlmaWNhclByb2R1Y3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Shared/Error.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/_ViewImports.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/_ViewStart.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AAA UNIVERSIDAD/3er año 2do cuatrimestre/Taller de lenguaje 2/Repotaller/tl2-tp6-2024-JavierRodriguez3/Views/Shared/_Layout.cshtml]
+[C:/AAAFacultad/Taller2/tl2-tp6-2024-JavierRodriguez3/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bpj18zcwrk
