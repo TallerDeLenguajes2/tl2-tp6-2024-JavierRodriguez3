@@ -5,6 +5,7 @@ using presupuestos;
 using presupuestosDetalle;
 using productos;
 using productoReposotory;
+using clientes;
 
 namespace presupuestoRepository
 {
@@ -18,7 +19,7 @@ namespace presupuestoRepository
 
 
 
-            string query = @"INSERT INTO Presupuestos (NombreDestinatario, FechaCreacion) 
+            string query = @"INSERT INTO Presupuestos (ClienteId, FechaCreacion) 
         VALUES (@destinatario, @fecha)";
 
             string query2 = @"INSERT INTO PresupuestosDetalle (idPresupuesto, idProducto, Cantidad) 
@@ -30,7 +31,7 @@ namespace presupuestoRepository
                 connection.Open();
                 SqliteCommand command = new SqliteCommand(query, connection);
 
-                command.Parameters.AddWithValue("@destinatario", presupuesto.NombreDestinatario);
+                command.Parameters.AddWithValue("@destinatario", presupuesto.Clientes.ClienteId);
                 command.Parameters.AddWithValue("@fecha", presupuesto.FechaCreacion);
                 command.ExecuteNonQuery();
                 SqliteCommand command3 = new SqliteCommand(query3, connection);
@@ -61,14 +62,15 @@ namespace presupuestoRepository
 
             using (SqliteConnection connection = new SqliteConnection(CadenaDeConexion))
             {
-                var query = "SELECT * FROM Presupuestos";
+                var query = "SELECT * FROM Presupuestos INNER JOIN Clientes USING (ClienteId)"; //traigo las dos tablas unidas
                 connection.Open();
                 var command = new SqliteCommand(query, connection);
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Presupuestos newProd = new Presupuestos(Convert.ToInt32(reader["idPresupuesto"]), Convert.ToString(reader["NombreDestinatario"]) ?? "No tiene Nombre destinatario", Convert.ToString(reader["FechaCreacion"]), detalle);
+                        var newCliente = new Clientes(Convert.ToInt32(reader["ClienteId"]), Convert.ToString(reader["Nombre"]), Convert.ToString(reader["Email"]), Convert.ToInt32(reader["Telefono"]));
+                        Presupuestos newProd = new Presupuestos(Convert.ToInt32(reader["idPresupuesto"]), newCliente, Convert.ToString(reader["FechaCreacion"]), detalle);
                         listaPresupuestos.Add(newProd);
                     }
                     connection.Close();
@@ -122,7 +124,7 @@ namespace presupuestoRepository
             List<PresupuestoDetalle> listaDetalles = new List<PresupuestoDetalle>();
 
             var query = @"
-                SELECT P.idPresupuesto, P.NombreDestinatario, P.FechaCreacion, 
+                SELECT P.idPresupuesto, P.ClienteId, P.FechaCreacion, 
                 PD.idProducto, PD.Cantidad, PR.Descripcion, PR.Precio
                 FROM Presupuestos P
                 LEFT JOIN PresupuestosDetalle PD ON P.idPresupuesto = PD.IdPresupuesto
