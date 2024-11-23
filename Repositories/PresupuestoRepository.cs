@@ -125,10 +125,11 @@ namespace presupuestoRepository
 
             var query = @"
                 SELECT P.idPresupuesto, P.ClienteId, P.FechaCreacion, 
-                PD.idProducto, PD.Cantidad, PR.Descripcion, PR.Precio
+                PD.idProducto, PD.Cantidad, PR.Descripcion, PR.Precio, CL.Nombre, CL.Email, CL.Telefono
                 FROM Presupuestos P
                 LEFT JOIN PresupuestosDetalle PD ON P.idPresupuesto = PD.IdPresupuesto
                 LEFT JOIN Productos PR ON PD.idProducto = PR.idProducto
+                INNER JOIN Clientes CL using (ClienteId)
                 WHERE P.idPresupuesto = @idPresupuesto";
 
             using (SqliteConnection connection = new SqliteConnection(CadenaDeConexion))
@@ -143,10 +144,11 @@ namespace presupuestoRepository
                     {
                         if (presupuesto == null)
                         {
+                            var newCliente = new Clientes(Convert.ToInt32(reader["ClienteId"]), Convert.ToString(reader["Nombre"]), Convert.ToString(reader["Email"]), Convert.ToInt32(reader["Telefono"]));
                             // Crear el objeto Presupuestos solo la primera vez
                             presupuesto = new Presupuestos(
                                 Convert.ToInt32(reader["idPresupuesto"]),
-                                Convert.ToString(reader["NombreDestinatario"]) ?? "No tiene destinatario",
+                                newCliente,
                                 Convert.ToString(reader["FechaCreacion"]),
                                 listaDetalles
                             );
@@ -223,7 +225,7 @@ namespace presupuestoRepository
 
                     using (var command = new SqliteCommand(query, connection, transaction))
                     {
-                        command.Parameters.AddWithValue("@destinatario", presupuesto.NombreDestinatario);
+                        command.Parameters.AddWithValue("@destinatario", presupuesto.Clientes.NombreCliente);
                         command.Parameters.AddWithValue("@fecha", presupuesto.FechaCreacion);
                         command.Parameters.AddWithValue("@id", presupuesto.IdPresupuesto);
                     }
@@ -270,6 +272,8 @@ namespace presupuestoRepository
             PresupuestosDetalle PD ON P.idPresupuesto = PD.idPresupuesto
         JOIN 
             Productos PR ON PD.idProducto = PR.idProducto
+        INNER JOIN 
+            Clientes CL using (ClienteId)
         WHERE 
             P.idPresupuesto = @id;";
 
@@ -285,7 +289,8 @@ namespace presupuestoRepository
                 {
                     if (cont == 1)
                     {
-                        presupuesto = new Presupuestos(Convert.ToInt32(reader["idPresupuesto"]), reader["NombreDestinatario"].ToString(), Convert.ToString(reader["FechaCreacion"]));
+                        var newCliente = new Clientes(Convert.ToInt32(reader["ClienteId"]), Convert.ToString(reader["Nombre"]), Convert.ToString(reader["Email"]), Convert.ToInt32(reader["Telefono"]));
+                        presupuesto = new Presupuestos(Convert.ToInt32(reader["idPresupuesto"]), newCliente, Convert.ToString(reader["FechaCreacion"]));
                     }
                     Productos producto = new Productos(Convert.ToInt32(reader["idProducto"]), reader["Producto"].ToString(), Convert.ToInt32(reader["Precio"]));
                     PresupuestoDetalle detalle = new PresupuestoDetalle(producto, Convert.ToInt32(reader["Cantidad"]));
