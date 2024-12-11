@@ -6,10 +6,11 @@ using presupuestosDetalle;
 using productos;
 using productoReposotory;
 using clientes;
+using iPresupuestosRepository;
 
 namespace presupuestoRepository
 {
-    public class PresupuestosRepository
+    public class PresupuestosRepository: IPresupuestosRepository
     {
         private string CadenaDeConexion = "Data Source=db/Tienda.db;Cache=Shared";
 

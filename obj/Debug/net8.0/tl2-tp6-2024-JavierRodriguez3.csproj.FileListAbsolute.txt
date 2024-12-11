@@ -103,7 +103,6 @@ D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.tl2-tp6-2024-JavierRodriguez3.props
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.tl2-tp6-2024-JavierRodriguez3.props
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\staticwebassets.pack.json
-D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\scopedcss\bundle\tl2-tp6-2024-JavierRodriguez3.styles.css
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\scopedcss\projectbundle\tl2-tp6-2024-JavierRodriguez3.bundle.scp.css
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\tl2-tp6-.BAF75260.Up2Date
@@ -113,3 +112,4 @@ D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\tl2-tp6-2024-JavierRodriguez3.genruntimeconfig.cache
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\ref\tl2-tp6-2024-JavierRodriguez3.dll
 D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\bin\Debug\net8.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\AAA UNIVERSIDAD\3er año 2do cuatrimestre\Taller de lenguaje 2\Repotaller\tl2-tp6-2024-JavierRodriguez3\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

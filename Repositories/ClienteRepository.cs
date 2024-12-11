@@ -5,11 +5,12 @@ using productos;
 using productoReposotory;
 using clientes;
 using SQLitePCL;
+using iClientesRepository;
 
 namespace clienteRepository
 {
 
-    public class ClientesRepository
+    public class ClientesRepository: IClientesRepository
     {
         private string CadenaDeConexion = "Data Source=db/Tienda.db;Cache=Shared";
 
